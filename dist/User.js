@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.User = void 0;
 class User {
     constructor(id, name, email) {
         this.id = id;
@@ -9,3 +11,4 @@ class User {
         task.assignee = this;
     }
 }
+exports.User = User;

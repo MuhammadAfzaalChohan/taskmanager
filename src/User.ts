@@ -1,4 +1,7 @@
-class User implements IUser{
+import { Task } from "./Task";
+import { IUser } from "./IUser";
+
+export class User implements IUser{
     id: number
     name:string
     email:string

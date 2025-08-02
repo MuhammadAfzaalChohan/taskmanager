@@ -1,3 +1,6 @@
+import { Task } from "./Task";
+import { TaskStatus } from "./TaskStatus";
+
 export class TaskManager {
   private tasks: Task[] = [];
 

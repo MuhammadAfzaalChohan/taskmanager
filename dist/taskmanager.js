@@ -21,9 +21,10 @@ class TaskManager {
     }
     //   getting tasks by user
     getTasksByUser(userId) {
+        var _a;
         const taskTOBeReturned = [];
         for (let i = 0; i < this.tasks.length; i++) {
-            if (this.tasks[i].assignee.id === userId) {
+            if (((_a = this.tasks[i].assignee) === null || _a === void 0 ? void 0 : _a.id) === userId) {
                 taskTOBeReturned.push(this.tasks[i]);
             }
         }

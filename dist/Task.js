@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Task = void 0;
 console.log(" afzaal CHohan is mister programmer the best");
 class Task {
     constructor(id, title, description, assignee, status) {
@@ -12,3 +14,4 @@ class Task {
         this.status = newstatus;
     }
 }
+exports.Task = Task;
