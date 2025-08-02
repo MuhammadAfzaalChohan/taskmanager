@@ -66,9 +66,9 @@ function main() {
                     FetchUsers_2.mUser[3].assigntask(fetchTasks_2.mTasks[3]);
                     taskManager = new taskmanager_1.TaskManager();
                     tasks.forEach(function (task) { return taskManager.addTask(task); });
-                    pendingTasks = taskManager.getTasksByStatus(TaskStatus_1.TaskStatus.Pending);
+                    pendingTasks = taskManager.getTasksByStatus(TaskStatus_1.TaskStatus.Completed);
                     console.log("Pending Tasks:", pendingTasks);
-                    afzaalTasks = taskManager.getTasksByUser(101);
+                    afzaalTasks = taskManager.getTasksByUser(102);
                     console.log("Afzaal's Tasks:", afzaalTasks);
                     allTasks = taskManager['tasks'];
                     firstPageTasks = (0, paginate_1.paginate)(allTasks, 2, 1);
@@ -78,3 +78,4 @@ function main() {
         });
     });
 }
+main();
