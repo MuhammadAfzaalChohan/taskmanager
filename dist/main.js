@@ -33,13 +33,13 @@ function main() {
         FetchUsers_2.mUser[3].assigntask(fetchTasks_2.mTasks[3]);
         const taskManager = new taskmanager_1.TaskManager();
         tasks.forEach(task => taskManager.addTask(task));
-        const pendingTasks = taskManager.getTasksByStatus(TaskStatus_1.TaskStatus.Pending);
+        const pendingTasks = taskManager.getTasksByStatus(TaskStatus_1.TaskStatus.Completed);
         console.log("Pending Tasks:", pendingTasks);
-        const afzaalTasks = taskManager.getTasksByUser(101);
+        const afzaalTasks = taskManager.getTasksByUser(102);
         console.log("Afzaal's Tasks:", afzaalTasks);
         const allTasks = taskManager['tasks'];
-        const firstPageTasks = (0, paginate_1.paginate)(allTasks, 2, 1);
-        console.log("Page 1 (2 tasks per page):", firstPageTasks);
+        const firstPageTasks = (0, paginate_1.paginate)(allTasks, 4, 1);
+        console.log("Page 1 (4 tasks per page):", firstPageTasks);
     });
 }
 main();

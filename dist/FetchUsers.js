@@ -47,7 +47,7 @@ exports.mUser = [
         },
     },
     {
-        id: 1004,
+        id: 104,
         name: "waqar",
         email: "w@a.com",
         assigntask(newTask) {
@@ -55,7 +55,7 @@ exports.mUser = [
         },
     },
     {
-        id: 1005,
+        id: 105,
         name: "yaqub",
         email: "y@a.com",
         assigntask(newTask) {

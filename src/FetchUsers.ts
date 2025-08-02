@@ -43,7 +43,7 @@ export const mUser: User[] = [
     },
   },
   {
-    id: 1004,
+    id: 104,
     name: "waqar",
     email: "w@a.com",
     assigntask(newTask: Task) {
@@ -51,7 +51,7 @@ export const mUser: User[] = [
     },
   },
   {
-    id: 1005,
+    id: 105,
     name: "yaqub",
     email: "y@a.com",
     assigntask(newTask: Task) {

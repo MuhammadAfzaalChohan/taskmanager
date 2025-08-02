@@ -43,11 +43,11 @@ export async function main() {
   tasks.forEach(task => taskManager.addTask(task));
 
   
-  const pendingTasks = taskManager.getTasksByStatus(TaskStatus.Pending);
+  const pendingTasks = taskManager.getTasksByStatus(TaskStatus.Completed);
   console.log("Pending Tasks:", pendingTasks);
 
   
-  const afzaalTasks = taskManager.getTasksByUser(101); 
+  const afzaalTasks = taskManager.getTasksByUser(102); 
   console.log("Afzaal's Tasks:", afzaalTasks);
 
  

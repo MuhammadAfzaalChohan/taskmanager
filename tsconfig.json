@@ -111,13 +111,31 @@
 //     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
 //   }
 // }
+
+
+
+// {
+//   "compilerOptions": {
+//     "target": "ES2015",
+//     "module": "commonjs",
+//     "lib": ["ES2015", "DOM" ],
+//     "outDir": "./dist",
+//     "strict": true
+//   },
+//   "include": ["src/**/*"]
+// }
+
+
+
+
 {
   "compilerOptions": {
-    "target": "ES2015",
+    "target": "es2016",
     "module": "commonjs",
-    "lib": ["ES2015", "DOM"],
     "outDir": "./dist",
-    "strict": true
-  },
-  "include": ["src/**/*"]
+    "rootDir": "./src",
+    "lib": ["es2015", "dom"],
+    "strict": true,
+    "esModuleInterop": true
+  }
 }
