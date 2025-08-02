@@ -22,7 +22,7 @@ export class TaskManager {
   getTasksByUser(userId: number): Task[] {
     const taskTOBeReturned: Task[] = [];
     for (let i = 0; i < this.tasks.length; i++) {
-      if (this.tasks[i].assignee.id === userId) {
+      if ( this.tasks[i].assignee?.id === userId) {
         taskTOBeReturned.push(this.tasks[i]);
       }
     }

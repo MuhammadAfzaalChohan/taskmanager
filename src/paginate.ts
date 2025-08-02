@@ -21,7 +21,7 @@ const mTasks: Task[] = [
     title: "Fix login bug",
     description: "Fix the bug preventing users from logging in",
     assignee: { id: 101, name: "afzaal", email: "a@a.com" },
-    status: TaskStatus.pending,
+    status: TaskStatus.Pending,
      updateStatus(newStatus: TaskStatus) {
       this.status = newStatus;
     }

@@ -15,7 +15,7 @@ interface ITask {
 
 enum TaskStatus
 {
-    pending,
+    Pending,
     InProgress,
     Completed
 }

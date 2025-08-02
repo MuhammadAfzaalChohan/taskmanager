@@ -10,7 +10,7 @@ async function main() {
   tasks.forEach(task => taskManager.addTask(task));
 
   
-  const pendingTasks = taskManager.getTasksByStatus(TaskStatus.pending);
+  const pendingTasks = taskManager.getTasksByStatus(TaskStatus.Pending);
   console.log("Pending Tasks:", pendingTasks);
 
   
@@ -20,7 +20,7 @@ async function main() {
  
   const allTasks = taskManager['tasks']; 
   const firstPageTasks = paginate<Task>(allTasks, 2, 1);
-  console.log("📄 Page 1 (2 tasks per page):", firstPageTasks);
+  console.log("Page 1 (2 tasks per page):", firstPageTasks);
 }
 
 main();
