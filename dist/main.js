@@ -42,3 +42,4 @@ function main() {
         console.log("Page 1 (2 tasks per page):", firstPageTasks);
     });
 }
+main();

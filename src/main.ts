@@ -16,6 +16,11 @@ import { TaskStatus } from "./TaskStatus";
 
 import { paginate } from "./paginate";
 
+import { ITask } from "./ITask";
+
+
+import { IUser } from "./IUser";
+
 
 export async function main() {
  
@@ -50,5 +55,8 @@ export async function main() {
   const firstPageTasks = paginate<Task>(allTasks, 2, 1);
   console.log("Page 1 (2 tasks per page):", firstPageTasks);
 }
+
+
+main();
 
 
