@@ -34,7 +34,7 @@ export class TaskManager {
 
   // finding tasks
 
-  findtask(id: string | number): Task {
+  FindTask(id: string | number): Task {
     if (typeof id === "number") {
       for (let i = 0; i < this.tasks.length; i++) {
         if (this.tasks[i].id === id) {

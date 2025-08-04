@@ -10,7 +10,7 @@ export async function fetchUsers(): Promise<IUser[]> {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve(mUser);
-    }, 5000);
+    }, 1000);
   });
 }
 

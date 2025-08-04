@@ -5,7 +5,7 @@ export async function fetchTasks(): Promise<Task[]> {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve(mTasks);
-    }, 5000);
+    }, 1000);
   });
 }
 

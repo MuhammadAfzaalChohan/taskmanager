@@ -54,8 +54,17 @@ export async function main() {
   const allTasks = taskManager['tasks']; 
   const firstPageTasks = paginate<Task>(allTasks, 2, 1);
   console.log("Page 1 (2 tasks per page):", firstPageTasks);
-}
 
+
+  try { const taskFinding= taskManager.FindTask("wash car");
+ 
+    console.log (" Task found: ", taskFinding);
+}
+   catch (Error) {
+    
+  }  
+}
+  
 
 main();
 
